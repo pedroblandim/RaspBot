@@ -20,8 +20,7 @@ def handle(bot, ip, request):
 
     request =  request['message']['text'].lower().split(' ')
     command =  request[0]  
-    print(f'req: {request} com:{command}')
-    
+
 
     # ip 
     if command == 'ip':
@@ -79,6 +78,6 @@ def listen(bot, ip):
 
 if __name__ == "__main__":
     bot = telepot.Bot(TOKEN)
+    bot.sendMessage(GROUP_ID, 'Initializing...')
     ip = getIp()[0]
     listen(bot, ip)
-
