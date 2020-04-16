@@ -1,2 +1,2 @@
 # RaspBot
-A bot that send RPi's OS infos via Telegram.
+A bot made with Python that sends RPi's OS infos via Telegram.
